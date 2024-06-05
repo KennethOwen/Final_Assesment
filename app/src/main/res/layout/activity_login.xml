@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:background="@drawable/border"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:gravity="center_horizontal"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/loginText"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:hint="Name"
+            android:paddingStart="20dp"
+            android:background="@drawable/input_border"
+            android:layout_below="@+id/nameText"
+            />
+
+        <TextView
+            android:id="@+id/nricText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NRIC"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/name"
+            android:paddingStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/nric"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:hint="NRIC"
+            android:paddingStart="20dp"
+            android:background="@drawable/input_border"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/nricText"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="320dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/purple"
+            android:text="Login"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            app:cornerRadius="10dp"
+            android:layout_below="@+id/nric"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
